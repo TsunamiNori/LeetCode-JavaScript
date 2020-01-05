@@ -10,7 +10,10 @@ var reverse = function(x) {
         revX = revX * 10 + last;
         absX = (absX - last) / 10;
     }
-
+    
+    /**
+    *  let revX = parseFloat(x.toString().split('').reverse().join(''));
+    */
     // in case overflow, in JavaScript maximum number is 2^31 - 1
     if (revX > Math.pow(2, 31) - 1) return 0;
 
