@@ -34,3 +34,30 @@ var myAtoi = function(str) {
 
     return num * sign;
 };
+
+/**
+ * Alternate Solution - 2020
+ * @param {string} str
+ * @return {number}
+ */
+/*
+var myAtoi = function(str) {
+      const INT_MIN = Math.pow(-2, 31);
+    const INT_MAX = Math.pow(2, 31) - 1;
+    
+    const number = parseInt(str, 10);
+    
+    if (number < INT_MIN) {
+        return INT_MIN;
+    }
+    
+    if (number > INT_MAX) {
+        return INT_MAX;
+    }
+    
+    if (isNaN(number)) {
+        return 0;
+    }
+    
+    return number
+}; */
