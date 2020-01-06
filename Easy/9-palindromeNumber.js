@@ -26,3 +26,9 @@ var isPalindrome = function(x) {
     }
     return (x === revX) || (x === Math.floor(revX / 10));
 };
+
+// 3rd solution
+var isPalindrome = function(x) {
+    if(x < 0 || (x !== 0 && x % 10===0)) return false
+    return x.toString().split('').reverse().join('') === x.toString();
+}
